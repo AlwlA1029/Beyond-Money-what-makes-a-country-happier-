@@ -1,4 +1,4 @@
-Papa.parse("WHR26_2025_only.csv", {
+Papa.parse("data/WHR26_2025_only.csv", {
     download: true,
     header: true,
     dynamicTyping: true,
