@@ -15,7 +15,10 @@ Papa.parse("data/WHR26_2025_only.csv", {
         createBubbleChart(data);
         createHeatmap(data);
     },
-
+error: function(error) {
+        console.error("Could not load CSV:", error);
+        alert("There was a problem loading your CSV file. Please check its filename and location.");
+    }
 });
 
 
