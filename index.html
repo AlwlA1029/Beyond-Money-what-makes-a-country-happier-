@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beyond Money | What Makes Countries Happier?</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Plotly chart library -->
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="logo">BEYOND MONEY</div>
+
+        <div class="nav-links">
+            <a href="#introduction">Introduction</a>
+            <a href="#global">Global Picture</a>
+            <a href="#countries">Countries</a>
+            <a href="#heatmap">Heatmap</a>
+            <a href="#takeaways">Takeaways</a>
+            <a href="#conclusion">Conclusion</a>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <header class="hero">
+        <p class="eyebrow">WORLD HAPPINESS REPORT · 2025</p>
+
+        <h1>Beyond<br>Money.</h1>
+
+        <h2>What Makes Countries Happier?</h2>
+
+        <p class="hero-description">
+            Income is part of the picture.
+            But does having more money always mean living a happier life?
+        </p>
+
+        <a href="#introduction" class="read-button">
+            Explore the story ↓
+        </a>
+    </header>
+
+    <!-- Introduction -->
+    <section id="introduction" class="section">
+
+        <p class="eyebrow">01 · INTRODUCTION</p>
+
+        <h2>Does money buy happiness?</h2>
+
+        <p>
+            Income is often associated with better living conditions.
+            However, it may not fully explain how people evaluate
+            their lives.
+        </p>
+
+        <p>
+            This data story explores the relationship between
+            income-related contributions and life evaluation,
+            while examining other factors across 147 countries
+            and regions.
+        </p>
+
+    </section>
+
+    <!-- Global chart -->
+    <section id="global" class="section">
+
+        <p class="eyebrow">02 · GLOBAL PICTURE</p>
+
+        <h2>Does higher income mean higher happiness?</h2>
+
+        <p>
+            Explore the relationship between GDP contribution
+            and life evaluation across countries and regions.
+        </p>
+
+        <div id="bubble-chart"></div>
+        <p class="chart-note">
+    Each bubble represents a country/region (n = 146).
+    Bubble size represents healthy life expectancy contribution.
+</p>
+
+    </section>
+
+    <!-- Country comparison -->
+    <section id="countries" class="section">
+
+        <p class="eyebrow">03 · COUNTRY COMPARISON</p>
+
+        <h2>Four countries, four different situations</h2>
+
+        <div class="country-grid">
+
+            <div class="country-card">
+                <h3>Finland</h3>
+                <p>High income contribution and high happiness.</p>
+            </div>
+
+            <div class="country-card">
+                <h3>Costa Rica</h3>
+                <p>Relatively lower income contribution and high happiness.</p>
+            </div>
+
+            <div class="country-card">
+                <h3>Hong Kong</h3>
+                <p>High income contribution and lower happiness.</p>
+            </div>
+
+            <div class="country-card">
+                <h3>Botswana</h3>
+                <p>Relatively lower income contribution and low happiness.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Heatmap -->
+    <section id="heatmap" class="section">
+
+        <p class="eyebrow">04 · SEVEN-FACTOR COMPARISON</p>
+
+        <h2>Looking beyond income</h2>
+
+        <p>
+            Compare seven model variables across Finland,
+            Costa Rica, Hong Kong and Botswana.
+        </p>
+
+        <div id="heatmap-chart"></div>
+
+    </section>
+
+        <!-- Takeaways -->
+    <section id="takeaways" class="section">
+
+        <p class="eyebrow">05 · KEY FINDINGS</p>
+
+        <h2>What the data tells us</h2>
+
+        <p class="takeaways-intro">
+            The data reveals three important patterns in the
+            relationship between income and life evaluation.
+        </p>
+
+        <div class="takeaway-grid">
+
+            <div class="takeaway-card">
+                <span class="takeaway-number">01</span>
+                <h3>Income matters, but it does not explain everything.</h3>
+
+                <div class="takeaway-stat">0.745</div>
+                <p class="stat-label">Correlation with life evaluation</p>
+
+                <p>
+                    The correlation between income-related contribution
+                    and life-evaluation scores is 0.745, indicating a
+                    positive relationship. However, this does not prove
+                    that higher income directly causes greater happiness.
+                </p>
+            </div>
+
+            <div class="takeaway-card">
+                <span class="takeaway-number">02</span>
+                <h3>Social support has a stronger correlation.</h3>
+
+                <div class="takeaway-stat">0.805</div>
+                <p class="stat-label">Correlation with life evaluation</p>
+
+                <p>
+                    The correlation between social-support contribution
+                    and life-evaluation scores is 0.805, higher than the
+                    0.745 correlation for income-related contribution.
+                    This suggests that social support is also an
+                    important factor associated with life evaluation,
+                    although the comparison does not establish a
+                    greater causal effect.
+                </p>
+            </div>
+
+            <div class="takeaway-card">
+                <span class="takeaway-number">03</span>
+                <h3>Similar income contributions, different happiness scores.</h3>
+
+                <div class="takeaway-stat">3.975</div>
+                <p class="stat-label">Difference in life-evaluation scores</p>
+
+                <p>
+                    Costa Rica has an income-related contribution of
+                    1.697 and a life-evaluation score of 7.439, while
+                    Botswana has corresponding values of 1.582 and
+                    3.464. Their income-related contributions are
+                    relatively close, but their life-evaluation scores
+                    differ substantially. This highlights the limits
+                    of using income-related contribution alone to
+                    explain differences in happiness.
+                </p>
+            </div>
+
+        </div>
+
+        <p class="takeaways-note">
+            Note: Correlations describe relationships in the 2025
+            dataset; they do not establish cause and effect.
+        </p>
+
+    </section>
+
+    <!-- Conclusion -->
+    <section id="conclusion" class="section">
+
+        <p class="eyebrow">06 · CONCLUSION</p>
+
+        <h2>Happiness is more than money.</h2>
+
+        <p>
+            Income-related contributions are associated with
+            life evaluation, but they do not tell the whole story.
+            Other factors offer additional perspectives on
+            differences between countries.
+        </p>
+
+    </section>
+
+    <footer>
+        <p>Source: WHR26_Data_Figure_2.1</p>
+        <p>Beyond Money · Data Visualization Story</p>
+    </footer>
+
+    <!-- Connect JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
